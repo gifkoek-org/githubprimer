@@ -13,6 +13,7 @@ pipeline {
                     pwd
                     ls -la
                     echo ${GIT_COMMIT}
+                    aws s3 ls
                 '''
             }
         }
